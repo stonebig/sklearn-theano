@@ -2,6 +2,8 @@
 #          Kyle Kastner
 # License: BSD 3 clause
 
+from __future__ import print_function
+
 import theano
 import numbers
 import numpy as np
