@@ -318,7 +318,7 @@ class FancyMaxPool(object):
             self.input_ = T.tensor4(dtype=self.input_dtype)
         else:
             self.input_ = input_expression
-        print("Pooling: shape %s stride %s" % (str(self.pool_shape),
+        print ("Pooling: shape %s stride %s" % (str(self.pool_shape),
                                                str(self.pool_stride)))
         if self.pool_stride == self.pool_shape:
             self.expression_ = T.signal.downsample.max_pool_2d(
